@@ -7,7 +7,8 @@ const colorChangrtBtn = document.querySelector('.change-color');
 const titleEl = document.querySelector('.color');
 
 const handleClickChangeColor = () => {
-  bodyColor.style.backgroundColor = getRandomHexColor();
-  titleEl.textContent = getRandomHexColor();
+  let colors = getRandomHexColor();
+  bodyColor.style.backgroundColor = colors;
+  titleEl.textContent = colors;
 };
 colorChangrtBtn.addEventListener('click', handleClickChangeColor);
